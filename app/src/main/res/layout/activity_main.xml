@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="70dp"
+        android:layout_height="46dp"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="274dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="181dp">
+
+        <Button
+            android:id="@+id/btnYel"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="144dp"
+            android:layout_marginTop="62dp"
+            android:layout_marginEnd="144dp"
+            android:text="Желтый"
+            tools:layout_editor_absoluteX="141dp"
+            tools:layout_editor_absoluteY="71dp" />
+
+        <Button
+            android:id="@+id/btnBl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnYel"
+            android:layout_alignStart="@+id/btnYel"
+            android:layout_alignEnd="@+id/btnYel"
+            android:layout_gravity="right"
+            android:layout_marginTop="147dp"
+            android:text="Синий"
+            tools:layout_editor_absoluteX="141dp"
+            tools:layout_editor_absoluteY="148dp" />
+
+        <Button
+            android:id="@+id/btnRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnYel"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="-144dp"
+            android:layout_toStartOf="@+id/btnYel"
+            android:text="Красный" />
+
+        <Button
+            android:id="@+id/btnGrn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnYel"
+            android:layout_marginStart="-144dp"
+            android:layout_marginTop="48dp"
+            android:layout_toEndOf="@+id/btnYel"
+            android:text="Зеленый" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
